@@ -1,6 +1,5 @@
 import createBareServer from '@tomphttp/bare-server-node';
 import express from 'express';
-import http from 'node:http';
 import path from 'path';
 import { createServer } from "node:http";
 import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
@@ -14,7 +13,7 @@ const bare = createBareServer("/bare/");
 const app = express();
 
 // Load our publicPath first and prioritize it over UV.
-app.use(express.static("static"));
+app.use(express.static("./static"));
 // Load vendor files last.
 // The vendor's uv.config.js won't conflict with our uv.config.js inside the publicPath directory.
 app.use("/uv/", express.static(uvPath));

@@ -16,12 +16,10 @@
   <link href='css/chrome-tabs-dark-theme.css' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
   <link rel="manifest" href="manifest.json" />
-  <script src="/uv/uv.bundle.js"></script>
-  <script src="/uv/uv.config.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
-      navigator.serviceWorker.register('do.uv.sw.js', {
+      navigator.serviceWorker.register('uv/uv.sw.js', {
           scope: '/fetch/',
       });
     };
@@ -190,6 +188,10 @@
     <script src='js/chrome-tabs.js'></script>
     <script src='internal/manager.js'></script>
     <script src='js/js.js'></script>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="register-sw.js"></script>
+    <script src="index.js"></script>            
     <!-- <script src='js/extensions.js'></script> -->
     <!-- <script src='js/x/sponsorblock.js'></script>  -->
     <!-- <script src='js/x/DarkMode.js'></script> -->
