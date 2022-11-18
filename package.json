@@ -1,7 +1,11 @@
 {
   "dependencies": {
-    "bare-server-node": "github:tomphttp/bare-server-node",
-    "node-static": "^0.7.11"
+    "@titaniumnetwork-dev/ultraviolet": "^1.0.3",
+    "@tomphttp/bare-server-node": "^1.0.4-deps1",
+    "express": "^4.18.2",
+    "ultraviolet-static": "github:titaniumnetwork-dev/Ultraviolet-Static",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
   },
   "name": "uv-app",
   "version": "1.0.0",
